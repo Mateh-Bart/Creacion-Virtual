@@ -16,5 +16,5 @@ app.use('/contact', routes.contacts)
 
 //Instance the server
 app.listen(app.get('port'), ()=>{
-    console.log(`server running on http://localhost:${app.get('port')}`)
+    console.log(`server running on port : ${app.get('port')}`)
 })
