@@ -5,6 +5,10 @@
     margin:0 auto;
     font-family:Verdana, sans-serif;
 }
+
+.body{
+    margin-top: 25%;
+}
 legend {
     color: tomato;
     font-size:16px;
@@ -99,6 +103,9 @@ textarea:focus {
     margin-bottom:3px;
 }
  </style>
+
+ <div class="body">
+
     <div id="wrapperr">
         <form action="{{domainName}}/contact/project" method="post">
             <fieldset>
@@ -127,3 +134,11 @@ textarea:focus {
             </fieldset>    
         </form>
     </div>
+ </div>
+
+ <script>
+
+     $(document).ready(()=>{
+      $("#mainNav").addClass("navbar-shrink");
+     })
+ </script>
