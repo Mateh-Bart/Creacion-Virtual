@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Creación Virtual</title>
-    <link rel="stylesheet" href="../css/reg.css">
-</head>
-<body>
-    <style>
-        #wrapper {
+
+<style>
+        #wrapperr {
     width:450px;
     margin:0 auto;
     font-family:Verdana, sans-serif;
@@ -108,8 +99,8 @@ textarea:focus {
     margin-bottom:3px;
 }
  </style>
-    <div id="wrapper">
-        <form action="https://creacion-virtual.herokuapp.com/contact/project" method="post">
+    <div id="wrapperr">
+        <form action="{{domainName}}/contact/project" method="post">
             <fieldset>
                 <legend>Creación Virtual</legend>
                 <div>
@@ -136,5 +127,3 @@ textarea:focus {
             </fieldset>    
         </form>
     </div>
-</body>
-</html>

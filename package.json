@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Mateh-Bart/Creacion-Virtual#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
     "morgan": "^1.9.1",
     "nodemailer": "^4.7.0"
   }

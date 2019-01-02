@@ -1,3 +1,12 @@
+'use strict'
+module.exports = app =>{
+    app.get('/', (req, res)=>{
+        res.render('index');
+    })
 
-exports = module.exports = {};
-exports.contacts = require('./contact');
+    app.get('/reg', (req, res)=>{
+        res.render('reg');
+    })
+
+    app.use('/contact', require('./contact'))
+};
