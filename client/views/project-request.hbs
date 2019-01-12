@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Creación Virtual</title>
-    <link rel="stylesheet" href="../css/reg.css">
-</head>
-<body>
-    <style>
-        #wrapper {
+
+<style>
+        #wrapperr {
     width:450px;
     margin:0 auto;
     font-family:Verdana, sans-serif;
@@ -108,8 +99,8 @@ textarea:focus {
     margin-bottom:3px;
 }
  </style>
-    <div id="wrapper">
-        <form action="http://localhost/contact/project" method="post">
+    <div id="wrapperr">
+        <form action="{{domainName}}/contact/project" method="post">
             <fieldset>
                 <legend>Creación Virtual</legend>
                 <div>
@@ -122,7 +113,11 @@ textarea:focus {
                     <input type="text" name="phone" placeholder="Telefono" required/>
                 </div>
                 <div>
+<<<<<<< HEAD:client/views/reg.html
                     <input type="text" name="email" placeholder="G-mail" required/>
+=======
+                    <input type="email" name="email" placeholder="E-mail" required />
+>>>>>>> b81cf0afb51346f957e64ef28a35d6f5a773dfe4:client/views/project-request.hbs
                 </div>
                 <div>
                     <input type="text" name="projectTitle" placeholder="Nombre de Proyecto eje: pagina web etc" required/>
@@ -136,5 +131,3 @@ textarea:focus {
             </fieldset>    
         </form>
     </div>
-</body>
-</html>
