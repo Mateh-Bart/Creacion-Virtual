@@ -1,7 +1,9 @@
 'use strict'
+const portafolioService = require('../services').portafolioService
+
 module.exports = app =>{
     app.get('/', (req, res)=>{
-        res.render('index');
+        res.render('index', { projects : portafolioService.getTop10()  });
     })
 
     app.get('/reg', (req, res)=>{
@@ -9,4 +11,5 @@ module.exports = app =>{
     })
 
     app.use('/contact', require('./contact'))
+    app.use('/portafolio', require('./portafolio'))
 };
