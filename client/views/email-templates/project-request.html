@@ -1,6 +1,77 @@
-<h1>SOLICITUD DE PROYECTO</h1>
+<!--<h1>SOLICITUD DE PROYECTO</h1>
             <h5>Nombre </h5> <p>${first} ${last}</p>
             <h5>Email </h5> <p>${email}</p>
             <h5>Telefono </h5> <p>${phone}</p>
             <h5>Proyecto </h5> <p>${projectTitle}</p>
             <h5>Descripcion </h5> <p>${description}</p>
+            </div>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de gmail</title>
+</head>
+<body>
+    
+<form action="">
+
+        <h1 id="titulo">SOLICITUD DE PROYECTO</h1>
+  <center>
+        <h2 id="subtitulo">Creacion virtual</h2>
+        </center>
+    
+
+    <p>Nombre: </p>
+    <p>${first} ${last}</p>
+    <input  type="text" class="field"><br/>
+
+    <p>Eamil: </p>
+    <p>${email}</p>
+    <input type="text" class="field"> <br/>
+
+    <p>Telefono: </p>
+    <p>${phone}</p>
+    <input type="text" class="field"> <br/>
+
+    <p>Proyecto: </p>
+    <p>${projectTitle}</p>
+    <input type="text" class="field"> <br/>
+
+    <p>Descripcion: </p>
+    <p>${description}</p>
+    <textarea class="field"></textarea> <br/>   
+</form>
+<style>
+form{
+    border-radius: 3px;
+    font-size: 0.8em;
+    color: chartreuse;
+    background-color: tomato;
+    padding: 10px;
+    margin: 300px;
+}
+#titulo{
+    background-color: royalblue;
+}
+
+#subtitulo{
+   
+    background-color: red;
+
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 20px;
+    width: 280px;
+}
+
+
+</style>
+    
+</body>
+</html>
+
+
