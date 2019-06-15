@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="{{domainName}}/public/css/login.css">
+<div class=" wrap">
+        <div class="">
+            <h2>Iniciar Sesion</h2>
+            <form action="account/login" method="POST" id="login-form"> 
+                <div class="form-group">
+                    <label for="name">Nombre de Usuario</label>
+                    <input type="text" name="name" id="name" class="form-control" aria-describedby="EmailHelp" placeholder="Ej: mateh@elismar.com / mateh_elismar">
+                    <!-- <small name="EmailHelp" id="EmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" id="pass" class="form-control" aria-describedby="PassHelp" placeholder="Ej: laamo123">
+                    <!-- <small name="PassHelp" id="PassHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div> 
+                <input class="btn btn-success" type="submit" value="Iniciar Sesion">
+                <br> 
+                <p class="error"></p>
+            </form>
+        </div>
+    </div> 
+    <script>
+        {{!-- function login(){ --}}
+            console.log('logining...')
+            let user = {}
+            user.email = $('#email').val() 
+            user.pass = $('#pass').val()
+            $.ajax({
+                url: `/account/login`,
+                type: 'post',
+               /* beforeSend: (request)=>{
+                    request.setRequestHeader('unad-auth', 'klk wawawaaa')
+                },*/
+                data: JSON.stringify(user),
+                contentType: 'application/json',
+                dataType: 'json',
+                success: (res)=>{   
+                    if(res.ok){
+                        window.location = res.redirectURL;
+                    }
+                    else{
+                        $('.error').html(res.error)
+                    }
+                    console.log(res)
+                },
+                error: (err)=>{
+                    console.error(err)
+                }
+            })
+        }
+    </script>

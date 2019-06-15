@@ -1,0 +1,37 @@
+ 
+
+<link rel="stylesheet" href="{{domainName}}/public/css/reg.css">
+
+
+<div class="body">{{!-- Si te fijas te daras cuenta de que agrege algunas clases de bootstrap para poder darle estilos  --}}
+    <div id="wrapper">
+       
+        <form class="container" action="{{domainName}}/contact/project" method="post">
+                <legend id="legend">Solicitud De Proyectos</legend>
+                <div class="form-group" >
+                    <input class="form-control" type="nombre" name="first" onkeypress="return sololetras(event)"   onpaste="return false" placeholder="Nombre" required/>
+                </div>
+                <div class="form-group" aria-required="true">
+                    <input class="form-control" type="apellido" name="last" onkeypress="return sololetras(event)"   onpaste="return false" placeholder="Apellido" required/>
+                </div>
+                <div class="form-group" >
+                    <input class="form-control" type="telefono" name="phone" onkeypress="return solonumeros(event)" onpaste="return false" placeholder="Telefono" required/>
+                </div>
+                <div class="form-group" >
+                    <input class="form-control" type="email" name="email" onkeypress="return sololetras(event)"   onpaste="return false" placeholder="E-mail" required />
+                </div>
+                <div class="form-group" >
+                    <input class="form-control" type="Nomprojecto" name="projectTitle" onkeypress="return sololetras(event)"   onpaste="return false" placeholder="Nombre de Proyecto" required/>
+                </div>
+                <div>
+                    <div class="form-group small"></div>
+                    <textarea class="form-control" name="description" placeholder="Requerimientos de su proyecto" required></textarea>
+                </div>     
+                <input class="form-control"  type="submit" name="submit" onclick="mostrarMensaje ()" value="Enviar"/>
+              
+
+        </form>
+    </div>  
+
+<script src="{{domainName}}/public/js/project-request.js"></script>
+</html>

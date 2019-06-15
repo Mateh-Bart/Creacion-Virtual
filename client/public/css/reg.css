@@ -1,0 +1,155 @@
+.body{
+    position: relative;
+
+}
+
+#wrapper {
+    width:450px;
+    margin:100px auto;
+    font-family:Verdana, sans-serif;
+
+    /* La funcionalidad que querias en fieldset esta aca */
+    border: 3px solid rgba(4, 129, 177, 0.4);
+    border-radius: 7px;
+    padding: 40px 0px;
+}
+
+legend {
+    top: -14px;
+    width: 246px;
+    position: absolute;
+    color: tomato;
+    font-size:16px;
+    padding:0 10px;
+    background:#fff;
+    
+    box-shadow: 0 1px 5px rgba(4, 129, 177, 0.5);
+    padding:5px 10px;
+    text-transform:uppercase;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+}
+/* fieldset {
+    position: absolute;
+    border-radius:4px;
+    background: #fff; 
+    background: -moz-linear-gradient(#fff, #f9fdff);
+    background: -o-linear-gradient(#fff, #f9fdff);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f9fdff)); 
+    background: -webkit-linear-gradient(#fff, #f9fdff);
+    padding:20px;
+    border-color:rgba(4, 129, 177, 0.4);
+} */
+input,
+textarea {
+    color: #373737;
+    background: #fff;
+    border: 1px solid #CCCCCC;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom:15px;
+    
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Esta parte es la que hacia que los textbox no tuvieran el tama?o que querias */
+
+/* input[type="text"],
+input[type="password"]{
+    padding: 8px 6px;
+    height: 22px;
+    width:280px;
+} */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background:#f5fcfe;
+    text-indent: 0;
+    z-index: 1;
+    color: #373737;
+    
+    width: 380px;
+    
+    border-color:#ccc;
+    box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+    opacity:0.6;
+}
+input[type="submit"]{
+    background: tomato;
+    border: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    text-transform:uppercase;
+    color: #eee;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 5px 22px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+textarea {
+    padding:3px;
+    width:96%;
+    height:100px;
+}
+textarea:focus {
+    background:#ebf8fd;
+    text-indent: 0;
+    z-index: 1;
+    color: #373737;
+    opacity:0.6;
+    box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+    border-color:#ccc;
+}
+.small {
+    line-height:14px;
+    font-size:12px;
+    color:#999898;
+    margin-bottom:3px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+    #legend{
+    background-color: blue;
+    }
+  #wrapper{
+      width: 95%;
+  }
+  .form-control{
+      width: 90%;
+
+  }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px){
+    #legend{
+        background-color: goldenrod;
+    }
+   
+}
+
+@media screen and (min-width: 414px) and (max-width: 736px){
+    #legend{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+    #legend{
+        background-color: khaki;
+    }
+}
+
+
+
+
+/* 
+ */

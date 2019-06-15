@@ -1,0 +1,8 @@
+.wrap{
+    width: 400px;
+    margin: 75px auto;
+    border: 1px solid rgb(144, 231, 205);
+    background:rgb(123, 197, 160);
+    padding: 10px 30px;
+    color: whitesmoke;
+}
